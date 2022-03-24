@@ -4,7 +4,7 @@ BRANCH=$1
 
 BRANCH_REGEX="^(feat|bug|bugfix|hotfix|chore)[_-][a-zA-Z_-]*[0-9]{3,4}"
 
-echo "number=${MRPI_NUMBER}" >> $GITHUB_ENV
+echo "number=${MRPI_NUMBER}" 
 echo "The branch ${BRANCH} was SUCCESSFULLY deleted."
 
 # if [[ $BRANCH =~ $BRANCH_REGEX ]];

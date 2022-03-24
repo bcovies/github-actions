@@ -14,4 +14,8 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: List files in the repository
+        run: |
+          chmod +x ${{ github.workspace }}/devops/test.sh
+          bash ${{ github.workspace }}/devops/test.sh  ${{ github.ref }}
       - run: echo "🍏 This job's status is ${{ job.status }}."

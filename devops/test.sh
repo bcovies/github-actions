@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "$1"
+echo "DELETANDO A BRANCH $1"

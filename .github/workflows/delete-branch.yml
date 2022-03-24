@@ -1,0 +1,19 @@
+name: delete-branch-env
+on:
+  commit
+
+jobs:
+  verify-branch-env:
+    if: github.event.ref_type == 'branch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Execute filter
+        run: |
+          BRANCH=${{ github.event.ref }}
+          echo ${GITHUB_PATH}
+          echo ${BRANCH}
+          ls -l 
+        working-directory: ./
+        shell: bash

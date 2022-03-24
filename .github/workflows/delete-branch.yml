@@ -1,6 +1,4 @@
 name: delete-branch-env
-on:
-  commit
 
 jobs:
   verify-branch-env:
